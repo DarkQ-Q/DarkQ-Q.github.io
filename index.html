@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <button class="first-modal-open">Открыть первую модалку</button>
+  <button class="second-modal-open">Открыть вторую модалку</button>
+  <button class="third-modal-open">Открыть третью модалку</button>
+
+
+  <div class="overlay">
+    <div class="modal" id="consultationModal">
+      <div class="modal_close">&times;</div>
+      <div class="modal_title">Просто заполните форму заявки</div>
+      <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+
+      <form class="test-form" action="#">
+        <input class="modal-input" name="name" type="text" required placeholder="Ваше имя">
+        <input class="modal-input" name="phone" type="number" required placeholder="Телефон">
+        <input class="modal-input" name="email" type="email" required placeholder="Ваш E-mail">
+
+        <button class="button">Заказать консультацию</button>
+      </form>
+    </div>
+
+    <div class="modal" id="orderModal">
+      <div class="modal_close">&times;</div>
+      <div class="modal_title">Ваш заказ:</div>
+      <div class="modal_descr">Пульсометр Polar FT1</div>
+
+      <form class="test-form" action="#">
+        <input class="modal-input" name="name" type="text" required placeholder="Ваше имя">
+        <input class="modal-input" name="phone" type="number" required placeholder="Телефон">
+        <input class="modal-input" name="email" type="email" required placeholder="Ваш E-mail">
+
+        <button class="button">Заказать консультацию</button>
+      </form>
+    </div>
+
+    <div class="modal modal_mini" id="thanksModal">
+      <div class="modal_close">&times;</div>
+      <div class="modal_title">Спасибо за вашу заявку!</div>
+      <div class="modal_descr">Наш менеджер свяжется c вами в ближайшее время!</div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
